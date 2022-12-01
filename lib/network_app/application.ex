@@ -18,7 +18,7 @@ defmodule NetworkApp.Application do
       NetworkAppWeb.Endpoint,
       # Start a worker by calling: NetworkApp.Worker.start_link(arg)
       # {NetworkApp.Worker, arg}
-      NetworkApp.Model
+      NetworkApp.Model.Worker
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
