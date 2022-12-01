@@ -1,0 +1,13 @@
+<!-- ~H""" -->
+<h1>am i cat</h1>
+
+<%= if assigns[:predict] do %>
+  Predict: <%= inspect(@predict) %>
+<% else %>
+<%= form_for :image, Routes.page_path(@conn, :index), [multipart: true], fn f -> %>
+  <label>Image</label>
+  <%= file_input f, :image %>
+  <%= submit "Send" %>
+  <% end %>
+  <% end %>
+
